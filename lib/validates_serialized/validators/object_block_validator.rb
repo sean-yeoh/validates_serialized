@@ -1,6 +1,6 @@
 module ActiveModel
   module Validations
-    class ObjectBlockValidator < BlockValidator #:nodoc:
+    class ObjectBlockValidator < ::ActiveModel::BlockValidator #:nodoc:
       def initialize(options, &block)
         @block = block
         @options = options

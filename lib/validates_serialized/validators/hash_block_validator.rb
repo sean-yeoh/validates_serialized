@@ -1,6 +1,6 @@
 module ActiveModel
   module Validations
-    class HashBlockValidator < BlockValidator #:nodoc:
+    class HashBlockValidator < ::ActiveModel::BlockValidator #:nodoc:
       def initialize(options, &block)
         @options = options
         super
